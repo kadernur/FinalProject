@@ -10,5 +10,6 @@ namespace Business.Abstract
         //tüm ürünleri listeler
         List<Product> GetAll();
 
+
     }
 }
