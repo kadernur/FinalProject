@@ -7,16 +7,10 @@ namespace DataAccess.Abstract
 {
     //productla ilgili veri tabanında yapacağim operasyonları içerir.
 
-    public interface IProductDal
+    public interface IProductDal:IEntityRepository<Product>
     {
-        List<Product> GetAll();
-
-        void Add(Product product);
-        void Update(Product product);
-        void Delete(Product product);
-        //Ürünleri category'e göre filtreleme 
-        List<Product> GetAllByCategory(int categoryId);
-
+       
+        //IEntityRepository'i Product için yapılandırdım.
 
     }
 }
