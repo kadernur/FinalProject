@@ -6,10 +6,9 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
-  public interface ICategoryDal:IEntityRepository<Category>
+    //SQL cümleciklerini tutar.
+  public   interface IOrderDal:IEntityRepository<Order>
     {
-        //generic alt yapıyla kuralım.
 
-        
     }
 }
